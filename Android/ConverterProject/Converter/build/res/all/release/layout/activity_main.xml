@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/textField"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Enter a value"
+        android:inputType="numberSigned|numberDecimal"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:checked="true"
+            android:text="to celsius" />
+
+        <RadioButton
+                android:id="@+id/radio1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:checked="false"
+                android:text="to kelvin" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="calculate"
+        android:text="Calculate" />
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+        <Button
+                android:id="@+id/button2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="gotToSensorScreen"
+                android:text="Sensor"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.lartek.wagecalculator20">
+
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="16"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.lartek.wagecalculator20.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_statistics" android:name="com.lartek.wagecalculator20.Statistics" android:parentActivityName="com.lartek.wagecalculator20.MainActivity">
+        </activity>
+        <activity android:label="@string/title_activity_delete" android:name="com.lartek.wagecalculator20.Delete" android:parentActivityName="com.lartek.wagecalculator20.Statistics">
+        </activity>
+        <activity android:label="@string/title_activity_from_to" android:name="com.lartek.wagecalculator20.FromTo" android:parentActivityName="com.lartek.wagecalculator20.Statistics">
+        </activity>
+    </application>
+
+</manifest>

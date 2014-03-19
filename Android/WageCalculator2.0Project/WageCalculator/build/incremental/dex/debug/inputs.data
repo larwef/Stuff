@@ -1,0 +1,37 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1375441003858 510 e98a088d35326abfc43e18d9f73ced5beba3bee3 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\R$menu.class
+1374245139879 838 5dd000f22a762de35a1b08d4d359d2a8e88bbd39 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\Statistics$1.class
+1374694928107 1204 5a93e4b76715eb3f4c1b808f07a32f3fbc2dab82 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\MainActivity$4.class
+1374607257133 822 2014fe07aef70ac0a7e7a0c3d56a3ce4e5b2bf30 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\FromTo$1.class
+1373887116228 1133 ae0e276e83740db58bc29f784a8bd5cd2c5a0dfe D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\MainActivity$3.class
+1373367149881 484258 bd6479f5dd592790607e0504e66e0f31c2b4d308 D:\Android Projects\WageCalculator2.0Project\WageCalculator\libs\android-support-v4.jar
+1375710693291 7051 1e21c7fd16b35dc147030fcdd912e35442df2d11 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\Delete.class
+1375443178651 5321 0be77f247ae1c57b50cfa5df1423f3a62301626c D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\MainActivity.class
+1375441003857 545 8ba13717a8f824a112b96321e936293d60e0b5ec D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\R$layout.class
+1375441003862 824 8119a0c0be3f42852cd0d33525daad9c8d6e77e0 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\R.class
+1373652381839 5680 dcc150d5afb4141ee0b3cc233750c7c7fcf9926b D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\DatabaseHandler.class
+1373887116227 1133 eb4825e274222c0f7f3839d835eb09e2bc7b0504 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\MainActivity$2.class
+1374245139881 838 8d377c1c97707638a3f86368b53fcfcf9374f2fa D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\Statistics$2.class
+1375441003860 639 27b26d2768ad52dfbec2b720beaffe328eb199c1 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\R$string.class
+1373918447284 424 0b7b50f6f36808fabec9f292948166b465edb266 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\R$array.class
+1373887116226 858 1d60e94f3812f9f0f8a1c21614ca44adbd621d34 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\MainActivity$1.class
+1374148383651 2511 cd637e38b71fd0c287c55def489f35a57a871352 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\WorkDay.class
+1373918447287 488 6044b7e2bfdca90e2770a5f0f789abdcf0ec27dc D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\R$dimen.class
+1373918447288 434 adcb3bc5c30566a3460594cbc112b3b1591261e7 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\R$drawable.class
+1373652381863 363 1a1944f091db80f210387de9a0d5889e04de2cbf D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\BuildConfig.class
+1374607257135 822 ede6ccb38c670172162be208fc8d23b78e8814d6 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\FromTo$2.class
+1375710693284 1622 bb645d25879a438b351c6aca72e6a27aebc56b56 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\Delete$5.class
+1375443178595 822 aa3af37f77eb1f59680966fb8d7b8baf609ab536 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\Delete$1.class
+1374245139884 1641 3a98d55a1952806c9c5555e4ce6c2d857533f8c9 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\Statistics$3.class
+1373918447285 367 b79aa7ec1f1eccab7b58b3858eb1a9c8eecced8a D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\R$attr.class
+1375443178666 7318 61b38b3f39b98d0f3a12626dc7af6c36b16f211e D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\Statistics.class
+1375443178596 822 b7b75924151403af3a5ef660b97325491dc01635 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\Delete$2.class
+1375441003802 1889 e7ea13caeb342d51b7d07c6ee6f4f5de582d4d6a D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\FromTo$4.class
+1375441003861 458 7ffb70decdaf10dc9b434ee8d4e244b31d9ac165 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\R$style.class
+1375441003855 2253 dc5bf23e4df1a846401fd32eaa29d8ae060fe0bc D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\R$id.class
+1375443178598 1016 d9db0d77f34e3361f72a7dbf6bee870e0aabd07f D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\Delete$3.class
+1375443178628 7594 df9a82ce46548e736fd77550c74a47fda0374c17 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\FromTo.class
+1375441003800 1889 2b8245b4d859f92647824d0141d98c91e5f9ae87 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\FromTo$3.class
+1375710693282 1886 ae927b187a7ae6f9f20079fdaf4845f214db3f87 D:\Android Projects\WageCalculator2.0Project\WageCalculator\build\classes\debug\com\lartek\wagecalculator20\Delete$4.class
