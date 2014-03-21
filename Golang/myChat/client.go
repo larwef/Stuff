@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"net"
+
 	"os"
 	"bytes"
 	"strings"
@@ -56,8 +57,10 @@ func ParseResponse(fromServer []byte) {
 		fmt.Println(response["messages"])
 	} else if _, ok := response["message"]; ok {
 		fmt.Println(response["message"])
-	} else {
+	} else if response["message"] == "logout" {
 		fmt.Println("Logged out", response["username"])
+	} else {
+		//Do nothing
 	}
 }
 
@@ -89,7 +92,7 @@ func ListenForResponse(conn net.Conn) {
 		_, err := conn.Read(fromServer)
 		if err != nil {
 			conn.Close()
-			fmt.Println("Server has gone offline")
+			fmt.Println("Server has gone offline or the connection has been closed")
 			syscall.Exit(0)
 		}
 		fromServer = bytes.Trim(fromServer, "\x00")
