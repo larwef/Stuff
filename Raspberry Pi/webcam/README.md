@@ -1,0 +1,1 @@
+Use your browser to get a picture from the Raspberry Pi camera. Nothing fancy, as simple as it gets. Just oppen your browser and put the Rpis ip adress and port in the URL bar. F.eks http://192.168.0.103:8080.

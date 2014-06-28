@@ -1,0 +1,1 @@
+Testing the GPIO on Raspberry Pi. Listen on broadcast, and reacts. Turns on or off led and read if its on or off. Bcastwrite is just an example of writing a message on broadcast. Any program that broadcasts a message will do just fine.
