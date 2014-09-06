@@ -1,0 +1,12 @@
+C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\bin\Release\TicTacToe.exe.config
+C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\bin\Release\TicTacToe.exe
+C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\bin\Release\TicTacToe.pdb
+C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Release\MainWindow.baml
+C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Release\MainWindow.g.cs
+C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Release\App.g.cs
+C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Release\TicTacToe_MarkupCompile.cache
+C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Release\TicTacToe.g.resources
+C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Release\TicTacToe.Properties.Resources.resources
+C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Release\TicTacToe.csproj.GenerateResource.Cache
+C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Release\TicTacToe.exe
+C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Release\TicTacToe.pdb
