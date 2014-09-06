@@ -1,0 +1,12 @@
+c:\users\eier\documents\visual studio 2012\Projects\HelloWPFApp\HelloWPFApp\bin\Release\HelloWPFApp.exe.config
+c:\users\eier\documents\visual studio 2012\Projects\HelloWPFApp\HelloWPFApp\bin\Release\HelloWPFApp.exe
+c:\users\eier\documents\visual studio 2012\Projects\HelloWPFApp\HelloWPFApp\bin\Release\HelloWPFApp.pdb
+c:\users\eier\documents\visual studio 2012\Projects\HelloWPFApp\HelloWPFApp\obj\Release\Greetings.baml
+c:\users\eier\documents\visual studio 2012\Projects\HelloWPFApp\HelloWPFApp\obj\Release\Greetings.g.cs
+c:\users\eier\documents\visual studio 2012\Projects\HelloWPFApp\HelloWPFApp\obj\Release\App.g.cs
+c:\users\eier\documents\visual studio 2012\Projects\HelloWPFApp\HelloWPFApp\obj\Release\HelloWPFApp_MarkupCompile.cache
+c:\users\eier\documents\visual studio 2012\Projects\HelloWPFApp\HelloWPFApp\obj\Release\HelloWPFApp.g.resources
+c:\users\eier\documents\visual studio 2012\Projects\HelloWPFApp\HelloWPFApp\obj\Release\HelloWPFApp.Properties.Resources.resources
+c:\users\eier\documents\visual studio 2012\Projects\HelloWPFApp\HelloWPFApp\obj\Release\HelloWPFApp.csproj.GenerateResource.Cache
+c:\users\eier\documents\visual studio 2012\Projects\HelloWPFApp\HelloWPFApp\obj\Release\HelloWPFApp.exe
+c:\users\eier\documents\visual studio 2012\Projects\HelloWPFApp\HelloWPFApp\obj\Release\HelloWPFApp.pdb
