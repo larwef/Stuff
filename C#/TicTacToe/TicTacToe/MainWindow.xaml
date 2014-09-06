@@ -21,8 +21,8 @@
         <TextBlock x:Name="box11" Grid.Column="1" Grid.Row="1" Background="White" MouseLeftButtonUp="click" />
         <TextBlock x:Name="box12" Grid.Column="1" Grid.Row="2" Background="White" MouseLeftButtonUp="click" />
 
-        <TextBlock x:Name="box20" Grid.Column="3" Grid.Row="0" Background="White" MouseLeftButtonUp="click" />
-        <TextBlock x:Name="box21" Grid.Column="3" Grid.Row="1" Background="White" MouseLeftButtonUp="click" />
-        <TextBlock x:Name="box22" Grid.Column="3" Grid.Row="2" Background="White" MouseLeftButtonUp="click" />
+        <TextBlock x:Name="box20" Grid.Column="2" Grid.Row="0" Background="White" MouseLeftButtonUp="click" />
+        <TextBlock x:Name="box21" Grid.Column="2" Grid.Row="1" Background="White" MouseLeftButtonUp="click" />
+        <TextBlock x:Name="box22" Grid.Column="2" Grid.Row="2" Background="White" MouseLeftButtonUp="click" />
     </Grid>
 </Window>

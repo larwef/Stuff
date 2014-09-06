@@ -10,3 +10,4 @@ C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Rele
 C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Release\TicTacToe.csproj.GenerateResource.Cache
 C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Release\TicTacToe.exe
 C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Release\TicTacToe.pdb
+C:\Users\Eier\documents\visual studio 2012\Projects\TicTacToe\TicTacToe\obj\Release\TicTacToe.csprojResolveAssemblyReference.cache
