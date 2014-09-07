@@ -61,6 +61,7 @@ namespace TicTacToe
                 score[2, 0] == 1 && score[1, 1] == 1 && score[0, 2] == 1) {
                 MessageBox.Show("Red won!");
                 Application.Current.Shutdown();
+                return;
                 
             }
             // For blue
@@ -74,7 +75,18 @@ namespace TicTacToe
                 score[2, 0] == 2 && score[1, 1] == 2 && score[0, 2] == 2) {
                 MessageBox.Show("Blue won!");
                 Application.Current.Shutdown();
+                return;
             }
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    if(score[i,j] == 0) {
+                        return;
+                    }
+                }
+            }
+            MessageBox.Show("Draw!");
+            Application.Current.Shutdown();
+            return;
         }
     }
 }
