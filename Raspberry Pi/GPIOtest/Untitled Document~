@@ -1,1 +1,0 @@
-Testing the GPIO on Raspberry Pi. Listen on broadcast, and reacts. Turns on or off led and read if its on or off.
