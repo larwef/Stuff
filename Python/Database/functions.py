@@ -117,6 +117,7 @@ class Appointment:
 										self.location,
 										self.description,
 										self.lastEdited))
+			self.appId = cursor.lastrowid
 			cursor.execute(checkForRoomQuery, self.location)
 			data = cursor.fetchall()
 			if data:
