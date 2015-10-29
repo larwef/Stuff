@@ -5,7 +5,7 @@ CFLAGS = -g -Wall -std=c99
 LDFLAGS = -lm -lwiringPi
 
 # List of sources
-SRC = main.c  gecko_bglib.c uart_win.c
+SRC = main.c  gecko_bglib.c uart.c
 
 # Program executable file name.
 TARGET = run
