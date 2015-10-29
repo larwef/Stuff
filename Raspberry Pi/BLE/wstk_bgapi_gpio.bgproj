@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project device="bgm111">
+
+    <gatt out="gatt_db.c" header="gatt_db.h" prefix="gattdb_">
+        <service uuid="1800" id="generic_access">
+            <characteristic uuid="2a00" id="device_name">
+                <properties read="true" const="false" />
+                <value variable_length="true" length="20" />
+            </characteristic>
+            <characteristic uuid="2a01">
+                <properties read="true" const="true" />
+                <value type="hex">4003</value>
+            </characteristic>
+        </service>
+        
+        <service uuid="180A" id="device_information">
+            <characteristic uuid="2A29">
+                <properties read="true" const="true" />
+                <value>Silicon Labs</value>
+            </characteristic>
+        </service>
+
+        <service uuid="ab65f91e-82c2-4b93-a535-26dcdfd2c83d" id="control" advertise="true">
+            <characteristic uuid="5e2c5575-c950-4b5f-8e7a-ee3e340395e7" id="gpio_control">
+                <properties read="true" write="true" indicate="true" />
+                <value length="1" type="user" />
+            </characteristic>
+        </service>
+    </gatt>
+
+    <hardware>
+        <!-- UART enabled @115200bps -->
+        <uart index="1" baud="115200" tx_pin="PC6" rx_pin="PC7" flowcontrol="false" bgapi="true"/>
+
+        <!-- WSTK UART pins -->
+        <gpio port="A" pin="5" mode="pushpull" out="1" />
+        <gpio port="A" pin="3" mode="pushpull" out="0" />
+
+        <!-- LED0 (same pin as Button0) -->
+        <gpio port="F" pin="6" mode="pushpull" out="1" />
+
+        <!-- Button1 (same pin as LED1) -->
+        <gpio port="F" pin="7" mode="input" out="1" />
+    </hardware>
+
+    <image out="wstk_bgapi_gpio.bin" />
+</project>
