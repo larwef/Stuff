@@ -1,0 +1,15 @@
+﻿Build started 22.11.2015 16:30:52.
+     1>Project "D:\Dropbox\NTNU\FordypningsProsjekt\BLE_demo\Windows\HostProject\BLE_demo\BLE_demo\BLE_demo.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Programfiler\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
+         main.c
+       Link:
+         D:\Programfiler\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Dropbox\NTNU\FordypningsProsjekt\BLE_demo\Windows\HostProject\BLE_demo\Debug\BLE_demo.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Dropbox\NTNU\FordypningsProsjekt\BLE_demo\Windows\HostProject\BLE_demo\Debug\BLE_demo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Dropbox\NTNU\FordypningsProsjekt\BLE_demo\Windows\HostProject\BLE_demo\Debug\BLE_demo.lib" /MACHINE:X86 Debug\gecko_bglib.obj
+         Debug\main.obj
+         Debug\uart_win.obj
+         BLE_demo.vcxproj -> D:\Dropbox\NTNU\FordypningsProsjekt\BLE_demo\Windows\HostProject\BLE_demo\Debug\BLE_demo.exe
+     1>Done Building Project "D:\Dropbox\NTNU\FordypningsProsjekt\BLE_demo\Windows\HostProject\BLE_demo\BLE_demo\BLE_demo.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.53

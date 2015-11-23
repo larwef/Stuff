@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project device="bgm111">
+	<!-- Gatt stuff -->    
+    <gatt out="gatt_db.c" header="gatt_db.h" prefix="gattdb_">
+        <service uuid="1800" id="generic_access">
+            <characteristic uuid="2a00" id="device_name">
+                <properties read="true" const="false"/>
+                <value variable_length="true" length="20"/>
+            </characteristic>
+            <!-- Appearance -->
+            <characteristic uuid="2a01">
+                <properties read="true" const="true"/>
+                <!-- 0000: Unknown-->
+                <!-- Generic Heart rate Sensor er vist 4003 hex blir verdien 832 -->
+                <!-- https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.appearance.xml -->
+                <value type="hex">0000</value>
+            </characteristic>
+        </service>
+        
+        <service uuid="180A" id="device_information">
+            <characteristic uuid="2a29">
+                <properties read="true" const="true"/>
+                <value>Silicon Labs</value>
+            </characteristic>
+        </service>
+
+        <!-- https://www.guidgenerator.com/online-guid-generator.aspx -->
+        <!-- I/O Service -->
+        <service uuid="64108d46-68fa-49a9-bba7-67dfd529883a" id="control" advertise="true">
+            <characteristic uuid="451d152b-3048-4b17-a3fd-0ab887e82492" id="gpio_control">
+                <properties write="true"/>
+                <value length="1" type="user"/>
+             </characteristic>
+
+             <characteristic uuid="865513c1-e3f9-438a-92dd-3916cb8db008" id="indication_control">
+                <properties read="true" indicate="true"/>
+                <value length="1" type="user"/>
+             </characteristic>
+        </service>
+    </gatt>
+
+    <!-- Hardware stuff -->
+    <hardware>
+        <!-- UART enabled @115200bps, using pin PC6 and PC7 as UART pins -->      
+        <uart index="1" baud="115200" tx_pin="PC6" rx_pin="PC7" flowcontrol="false" bgapi="true"/>
+
+        <!-- GPIO configuration needed for WSTK UART to work-->
+		<gpio port="A" pin="5" mode="pushpull" out="1"/>
+		<gpio port="A" pin="3" mode="pushpull" out="0"/>
+        <!-- LED0 (same pin as Button0) -->
+        <gpio port="F" pin="6" mode="pushpull" out="1"/>
+    </hardware>
+
+    <image out="BLE_demo.bin"/>
+</project>
