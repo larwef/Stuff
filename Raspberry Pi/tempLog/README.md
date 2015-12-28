@@ -1,0 +1,1 @@
+Program for logging temperature and Matlab program for plotting data. An Arduino reads the sensor, and sends data to the Pi.
