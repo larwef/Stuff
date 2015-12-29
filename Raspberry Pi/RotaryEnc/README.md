@@ -1,0 +1,1 @@
+Example using a rotary encoder(https://www.sparkfun.com/products/10982) with the Raspberry Pi.

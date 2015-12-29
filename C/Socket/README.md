@@ -1,0 +1,1 @@
+Small socket example in C. The makefile compiles both the client and server program at the same time.

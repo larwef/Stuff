@@ -1,0 +1,1 @@
+Testing the Low Energy UART in Energy Mode 2.

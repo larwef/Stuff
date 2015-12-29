@@ -1,0 +1,1 @@
+Controlling a servo using the arrow keys, using a Raspberry Pi and a Micro Maestro 6-Channel USB Servo Controller (https://www.pololu.com/product/1350).

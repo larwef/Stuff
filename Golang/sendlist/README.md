@@ -1,0 +1,1 @@
+Small test for a program sending an array of structs over UDP.

@@ -1,0 +1,1 @@
+Some examples using the EFM32GG STK3700 (https://www.silabs.com/products/mcu/lowpower/Pages/efm32gg-stk3700.aspx) from Silicon Labs.

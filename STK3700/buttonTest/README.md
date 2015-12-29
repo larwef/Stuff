@@ -1,0 +1,1 @@
+Simple example setting up buttons and leds using the registers.
