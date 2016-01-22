@@ -188,7 +188,7 @@ static void on_gpio_test_service_evt(ble_gpio_test_service_t * p_gpio_test_servi
     { 
 		// Må ha brackets, ellers klages det på deklarasjonen av variablene i casen
         case BLE_GPIO_TEST_SERVICE_LED_EVT_WRITE:{
-			char buff[16];
+			char buff[32];
 			uint8_t value = p_evt->params.led.toggle_led;
 			sprintf(buff,"Value written: %d\r\n",value);
 			uart_print_string(buff);
