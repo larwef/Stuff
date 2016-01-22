@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/service.xsd"
+  type="larwef.service.gpio_test_service"
+  uuid="491c3b9c-7e2c-461d-8e54-29fe5da419fc"
+  name="GPIO Test Service">
+  <Transports>
+    <Classic>false</Classic>
+    <LowEnergy>true</LowEnergy>
+  </Transports>
+  <Characteristics>
+    <Characteristic
+      type="larwef.characteristic.led"
+      name="Led">
+      <Requirement>Optional</Requirement>
+      <Properties>
+        <Read>Excluded</Read>
+        <Write>Mandatory</Write>
+        <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+        <SignedWrite>Excluded</SignedWrite>
+        <ReliableWrite>Excluded</ReliableWrite>
+        <Notify>Excluded</Notify>
+        <Indicate>Excluded</Indicate>
+        <WritableAuxiliaries>Excluded</WritableAuxiliaries>
+        <Broadcast>Excluded</Broadcast>
+        <ExtendedProperties>Excluded</ExtendedProperties>
+      </Properties>
+    </Characteristic>
+    <Characteristic
+      type="larwef.characteristic.button"
+      name="Button">
+      <Requirement>Optional</Requirement>
+      <Properties>
+        <Read>Mandatory</Read>
+        <Write>Excluded</Write>
+        <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+        <SignedWrite>Excluded</SignedWrite>
+        <ReliableWrite>Excluded</ReliableWrite>
+        <Notify>Mandatory</Notify>
+        <Indicate>Excluded</Indicate>
+        <WritableAuxiliaries>Excluded</WritableAuxiliaries>
+        <Broadcast>Excluded</Broadcast>
+        <ExtendedProperties>Excluded</ExtendedProperties>
+      </Properties>
+    </Characteristic>
+  </Characteristics>
+</Service>

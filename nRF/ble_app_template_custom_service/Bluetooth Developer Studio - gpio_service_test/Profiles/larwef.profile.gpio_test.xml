@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/profile.xsd"
+  name="GPIO Test"
+  type="larwef.profile.gpio_test"
+  uuid="491c1f81-7e2c-461d-8e54-29fe5da419fc">
+  <InformativeText>
+    <Abstract />
+    <InformativeDisclaimer />
+    <Summary />
+    <Examples />
+  </InformativeText>
+  <Role
+    name="New Profile Service">
+    <Service
+      type="larwef.service.gpio_test_service">
+      <Declaration>Primary</Declaration>
+      <Requirement>Mandatory</Requirement>
+      <Characteristic
+        type="larwef.characteristic.led">
+        <Requirement>Mandatory</Requirement>
+      </Characteristic>
+      <Characteristic
+        type="larwef.characteristic.button">
+        <Requirement>Mandatory</Requirement>
+      </Characteristic>
+    </Service>
+  </Role>
+  <Role
+    name="New Profile Client">
+    <Client
+      type="larwef.service.gpio_test_service">
+      <Requirement>Mandatory</Requirement>
+    </Client>
+  </Role>
+</Profile>

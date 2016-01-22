@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<BDSProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="gpio_service_test" LastModified="2016-01-22T15:21:07.5796566+01:00">
+  <Namespace>larwef</Namespace>
+  <BaseGuid>491c0000-7e2c-461d-8e54-29fe5da419fc</BaseGuid>
+  <Profile Name="larwef.profile.gpio_test" XMLFile="Profiles\larwef.profile.gpio_test.xml" />
+  <ServiceFiles>
+    <Service UID="30698f47-45dd-47bb-bb18-467a81c3f42e" XMLFile="Services\larwef.service.gpio_test_service.xml" UUIDMode="Full">
+      <UUIDDisplayMode>Full</UUIDDisplayMode>
+      <CharacteristicFiles>
+        <Characteristic UID="90543e37-e8dc-411a-b9dd-f0cb785cab48" XMLFile="Characteristics\larwef.characteristic.led.xml" UUIDMode="Full" />
+        <Characteristic UID="db80d29f-0d32-4139-82c6-f2c29ce50720" XMLFile="Characteristics\larwef.characteristic.button.xml" UUIDMode="Full" />
+      </CharacteristicFiles>
+    </Service>
+  </ServiceFiles>
+  <Workbench>
+    <Client Name="Virtual Client" />
+    <Peripheral Name="Virtual Server" />
+  </Workbench>
+  <SavePath>C:\Users\Lars\Documents\Bluetooth Developer Studio\gpio_service_test\gpio_service_test.bds</SavePath>
+  <PublishData>
+    <LastPublishDate>0</LastPublishDate>
+    <Annotations>true</Annotations>
+    <Emulation>true</Emulation>
+  </PublishData>
+</BDSProject>

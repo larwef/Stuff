@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Characteristic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/characteristic.xsd"
+  type="larwef.characteristic.button"
+  uuid="491c02d8-7e2c-461d-8e54-29fe5da419fc"
+  name="Button" />
