@@ -6,12 +6,9 @@ import(
 )
 
 func main() {
-	fmt.Println("Minesweeper")
+	fmt.Println("Minesweeper");
 
-	var playBoard board.Board
+	var playBoard board.Board;
 
-	board.Initialize(&playBoard)
-	board.PrintBoard(playBoard)
-	fmt.Println("\n")
-	board.PrintMask(playBoard)
+	board.PlayGame(&playBoard);
 }

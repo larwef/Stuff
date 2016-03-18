@@ -1,1 +1,1 @@
-An unfinished version of Minesweeper.
+comand line Minesweeper. Currently working, but it does not currently show how many mines are in djacent fields. So one will need to rely on luck. Will hopefully be updated soon. Input the x and y coordinate separated by space(eg. 1 1) to open a field.
