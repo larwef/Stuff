@@ -1,4 +1,4 @@
-package board
+package minesweeper
 
 import(
 	"fmt"
@@ -25,6 +25,26 @@ type Board struct {
 	Values[][]	int
 	Mask[][]	string
 
+}
+
+func PlayGame(playBoard *Board){
+	Initialize(playBoard);
+	// For debugging purposes
+	// PrintBoard(*playBoard);
+	fmt.Println("\n");
+	PrintMask(*playBoard);
+
+	for playBoard.GameState == Playing {
+		x,y := GetPlayInput(*playBoard);
+		OpenField(x, y, playBoard);
+		PrintMask(*playBoard);
+	}
+
+	if playBoard.GameState == Won {
+		fmt.Println("You won!");
+	} else {
+		fmt.Println("You lost");
+	}
 }
 
 func Initialize(playBoard *Board) {
@@ -84,6 +104,12 @@ func GetInitInput(playBoard *Board) {
 			fmt.Println("None of the values can be 0 or negative numbers");
 			continue
 		}
+		if minecount > width*height {
+			fmt.Println("Too many mines");
+		}
+		if height < 3 || width < 3 {
+			fmt.Println("Please select 3x3 or higher");
+		}
 		break;
 	}
 	playBoard.Width = width;
@@ -99,29 +125,42 @@ func PlaceMines(playBoard *Board) {
 		randW := rand.Int() % playBoard.Width;
 		randH := rand.Int() % playBoard.Height;
 
-		if playBoard.Values[randH][randW] == 0 {
-			playBoard.Values[randH][randW] = -1;
+		if playBoard.Values[randH][randW] != 9 {
+			playBoard.Values[randH][randW] = 9;
+			UpdateAdjcentTiles(randW, randH, playBoard);
 			minesPlaced++;
 		}
 	}
 }
 
-func PlayGame(playBoard *Board){
-	Initialize(playBoard);
-	PrintBoard(*playBoard);
-	fmt.Println("\n");
-	PrintMask(*playBoard);
+func UpdateAdjcentTiles(x int, y int, playBoard *Board) {
+	x_low := x-1;
+	x_high := x+1
+	y_low := y-1;
+	y_high := y+1;
 
-	for playBoard.GameState == Playing {
-		x,y := GetPlayInput(*playBoard);
-		OpenField(x, y, playBoard);
-		PrintMask(*playBoard);
+	if x_low < 0 {
+		x_low = 0;
 	}
 
-	if playBoard.GameState == Won {
-		fmt.Println("You won!");
-	} else {
-		fmt.Println("You lost");
+	if x_high >= playBoard.Width {
+		x_high = playBoard.Width-1;
+	}
+
+	if y_low < 0 {
+		y_low = 0;
+	}
+
+	if y_high >= playBoard.Height {
+		y_high = playBoard.Height-1;
+	}
+
+	for i := x_low; i <= x_high; i++ {
+		for j := y_low; j <= y_high; j++ {
+			if playBoard.Values[j][i] != 9 {
+				playBoard.Values[j][i]++;
+			}
+		}
 	}
 }
 
@@ -163,7 +202,7 @@ func GetPlayInput(playBoard Board) (int, int){
 }
 
 func OpenField(x int, y int, playBoard *Board) {
-	if playBoard.Values[x][y] == -1 {
+	if playBoard.Values[x][y] == 9 {
 		playBoard.GameState = Lost;
 		playBoard.Mask[x][y] = "¤"; 
 		return;

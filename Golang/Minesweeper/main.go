@@ -2,13 +2,13 @@ package main
 
 import(
 	"fmt"
-	"./board"
+	"./minesweeper"
 )
 
 func main() {
 	fmt.Println("Minesweeper");
 
-	var playBoard board.Board;
+	var playBoard minesweeper.Board;
 
-	board.PlayGame(&playBoard);
+	minesweeper.PlayGame(&playBoard);
 }
