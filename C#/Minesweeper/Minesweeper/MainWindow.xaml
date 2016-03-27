@@ -1,0 +1,18 @@
+﻿<Window x:Class="Minesweeper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Minesweeper"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="650">
+    <Grid>
+        <Border x:Name="border" BorderBrush="Black" BorderThickness="2" Height="500" Width="500" Margin="0,-50,0,0">
+            <UniformGrid x:Name="gridContainer" HorizontalAlignment="Stretch"/>
+        </Border>
+        <TextBox x:Name="inputWidth" Height="25" Margin="-300,500,0,0" TextWrapping="Wrap" Text="Width" Width="80"/>
+        <TextBox x:Name="inputHeight" Height="25" Margin="-100,500,0,0" TextWrapping="Wrap" Text="Height" Width="80"/>
+        <TextBox x:Name="inputMines" Height="25" Margin="100,500,0,0" TextWrapping="Wrap" Text="Mines" Width="80"/>
+        <Button x:Name="startBtn" Height="25" Margin="300,500,0,0" Content="Start game" Width="80" Click="startBtn_Click"/>
+    </Grid>
+</Window>

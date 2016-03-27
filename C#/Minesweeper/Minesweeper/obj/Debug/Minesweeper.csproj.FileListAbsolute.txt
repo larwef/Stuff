@@ -1,0 +1,14 @@
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe.config
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\bin\Debug\Minesweeper.pdb
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csprojResolveAssemblyReference.cache
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\obj\Debug\MainWindow.g.cs
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\obj\Debug\App.g.cs
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper_MarkupCompile.cache
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper_MarkupCompile.lref
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\obj\Debug\MainWindow.baml
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.g.resources
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.Properties.Resources.resources
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csproj.GenerateResource.Cache
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.exe
+D:\Dropbox\Div\Div Kode\C#\Minesweeper\Minesweeper\Minesweeper\obj\Debug\Minesweeper.pdb

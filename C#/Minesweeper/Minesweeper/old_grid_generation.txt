@@ -1,0 +1,32 @@
+gridContainer.ColumnDefinitions.Clear();
+            gridContainer.RowDefinitions.Clear();
+            gridContainer.Children.Clear();
+
+            int width = int.Parse(inputWidth.Text);
+            int height = int.Parse(inputHeight.Text);
+            int mines = int.Parse(inputMines.Text);
+
+            double gridElementHeight = gridContainer.ActualHeight/height;
+
+            inputMines.Text = gridElementHeight.ToString();
+
+            ColumnDefinition[] columns = new ColumnDefinition[width];
+            RowDefinition[] rows = new RowDefinition[height];
+
+            for (int i = 0; i < width; i++)
+            {
+                columns[i] = new ColumnDefinition();
+                gridContainer.ColumnDefinitions.Add(columns[i]);
+                for (int j = 0; j < height; j++)
+                {
+                    rows[j] = new RowDefinition(){Height = new GridLength(gridElementHeight)};
+                    gridContainer.RowDefinitions.Add(rows[j]);
+                    TextBlock block = new TextBlock();
+                    block.Background = Brushes.Black;
+                    block.Margin = new Thickness(1,1,1,1);
+                    Grid.SetRow(block, j);
+                    Grid.SetColumn(block, i);
+                    gridContainer.Children.Add(block);
+                }
+            }
+        }
