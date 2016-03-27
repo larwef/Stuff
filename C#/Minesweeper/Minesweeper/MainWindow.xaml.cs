@@ -37,9 +37,24 @@ namespace Minesweeper
 
             openedBlocks = 0;
 
-            width = int.Parse(inputWidth.Text);
-            height = int.Parse(inputHeight.Text);
-            mines = int.Parse(inputMines.Text);
+            try
+            {
+                width = int.Parse(inputWidth.Text);
+                height = int.Parse(inputHeight.Text);
+                mines = int.Parse(inputMines.Text);
+            }
+
+            catch
+            {
+                MessageBox.Show("Invalid input. Width, Height and Mines must be integers");
+                return;
+            }
+
+            if (mines > height*width)
+            {
+                MessageBox.Show("Too many mines");
+                return;
+            }
 
             init_board(width, height, mines);
 
@@ -72,7 +87,7 @@ namespace Minesweeper
             int column = index % columns;
             int row = index / columns;
 
-            string imageUrl = "pack://application:,,,/Images/" + board[column,row].ToString() + ".png";
+            string imageUrl = "pack://application:,,,/Images/" + board[row,column].ToString() + ".png";
 
             clickedBlock.Fill = new ImageBrush
             {
@@ -82,20 +97,20 @@ namespace Minesweeper
 
             openedBlocks++;
 
-            if (board[column,row] == 9)
+            if (board[row,column] == 9)
             {
-                MessageBox.Show("You lost");
-                gridContainer.IsEnabled = false;
+                //MessageBox.Show("You lost");
+                //gridContainer.IsEnabled = false;
             }
 
             else if (openedBlocks >= height*width - mines)
             {
-                MessageBox.Show("You won!");
-                gridContainer.IsEnabled = false;
+                //MessageBox.Show("You won!");
+                //gridContainer.IsEnabled = false;
             }
         }
 
-        void init_board(int rows, int columns, int mines)
+        void init_board(int columns, int rows, int mines)
         {
             board = new int[rows, columns];
             int minesPlaced = 0;
@@ -107,9 +122,9 @@ namespace Minesweeper
                 int x = rnd.Next(columns);
                 int y = rnd.Next(rows);
 
-                if (board[x,y] != 9)
+                if (board[y,x] != 9)
                 {
-                    board[x,y] = 9;
+                    board[y,x] = 9;
                     updateAdjacentBlocks(x,y);
                     minesPlaced++;
                 }
@@ -127,26 +142,26 @@ namespace Minesweeper
             {
                 xLow = 0;
             }
-            if (xHigh >= board.GetLength(0))
+            if (xHigh >= board.GetLength(1))
             {
-                xHigh = board.GetLength(0) - 1;
+                xHigh = board.GetLength(1) - 1;
             }
             if (yLow < 0)
             {
                 yLow = 0;
             }
-            if (yHigh >= board.GetLength(1))
+            if (yHigh >= board.GetLength(0))
             {
-                yHigh = board.GetLength(1) - 1;
+                yHigh = board.GetLength(0) - 1;
             }
 
             for (int i = xLow; i <= xHigh; i++)
             {
                 for (int j = yLow; j <= yHigh; j++)
                 {
-                    if(board[i,j] != 9)
+                    if(board[j,i] != 9)
                     {
-                        board[i,j]++;
+                        board[j,i]++;
                     }
                 }
             }
