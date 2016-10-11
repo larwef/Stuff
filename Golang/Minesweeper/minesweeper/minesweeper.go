@@ -125,8 +125,8 @@ func PlaceMines(playBoard *Board) {
 		randW := rand.Int() % playBoard.Width;
 		randH := rand.Int() % playBoard.Height;
 
-		if playBoard.Values[randH][randW] != 9 {
-			playBoard.Values[randH][randW] = 9;
+		if playBoard.Values[randW][randH] != 9 {
+			playBoard.Values[randW][randH] = 9;
 			UpdateAdjcentTiles(randW, randH, playBoard);
 			minesPlaced++;
 		}
@@ -157,8 +157,8 @@ func UpdateAdjcentTiles(x int, y int, playBoard *Board) {
 
 	for i := x_low; i <= x_high; i++ {
 		for j := y_low; j <= y_high; j++ {
-			if playBoard.Values[j][i] != 9 {
-				playBoard.Values[j][i]++;
+			if playBoard.Values[i][j] != 9 {
+				playBoard.Values[i][j]++;
 			}
 		}
 	}
@@ -217,10 +217,9 @@ func OpenField(x int, y int, playBoard *Board) {
 }
 
 func PrintMask(playBoard Board) {
-	fmt.Printf("    ");
+	fmt.Printf("   ");
 	for i := 0; i < playBoard.Width; i++ {
-		fmt.Printf("%d", i%10);
-		fmt.Printf(" ");
+		fmt.Printf(" %d", i%10);
 	}
 	fmt.Printf("\n  ")
 	for i := 0; i < 2*playBoard.Width + 1; i++ {
@@ -231,8 +230,7 @@ func PrintMask(playBoard Board) {
 		if i < 10 {
 			fmt.Printf(" ");
 		}
-		fmt.Printf("%d", i);
-		fmt.Printf("| ");
+		fmt.Printf("%d| ", i);
 		for j := 0; j < playBoard.Width; j++ {
 			fmt.Printf(playBoard.Mask[j][i]);
 			fmt.Printf(" ");
